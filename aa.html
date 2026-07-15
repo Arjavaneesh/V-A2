@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beautiful Webpage</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#00c6ff,#0072ff);
+    color:white;
+}
+
+/* Navigation */
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 80px;
+}
+
+.logo{
+    font-size:35px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:30px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+    transition:.4s;
+}
+
+nav ul li a:hover{
+    color:yellow;
+}
+
+/* Hero */
+
+.hero{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:90vh;
+    text-align:center;
+}
+
+.hero-content h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:22px;
+    width:700px;
+    max-width:90%;
+    margin:auto;
+    line-height:1.8;
+}
+
+button{
+    margin-top:35px;
+    padding:15px 35px;
+    border:none;
+    border-radius:30px;
+    background:white;
+    color:#0072ff;
+    font-size:18px;
+    cursor:pointer;
+    transition:.5s;
+}
+
+button:hover{
+    background:#ffeb3b;
+    transform:scale(1.1);
+}
+
+/* Cards */
+
+.container{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+    padding:70px;
+}
+
+.card{
+    width:300px;
+    background:white;
+    color:#333;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
+}
+
+.card h2{
+    margin-bottom:15px;
+}
+
+/* Footer */
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#003d80;
+}
+
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+}
+
+nav ul{
+    margin-top:20px;
+}
+
+.hero-content h1{
+    font-size:40px;
+}
+
+.hero-content p{
+    font-size:18px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">Nova</div>
+
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Services</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Welcome to My Website</h1>
+
+<p>
+Create beautiful websites using only HTML and CSS.
+This modern responsive design is clean, colorful, and easy to customize.
+</p>
+
+<button>Explore Now</button>
+
+</div>
+
+</section>
+
+<section class="container">
+
+<div class="card">
+<h2>🚀 Fast</h2>
+<p>Optimized layout with responsive design.</p>
+</div>
+
+<div class="card">
+<h2>🎨 Stylish</h2>
+<p>Modern colors, animations, and hover effects.</p>
+</div>
+
+<div class="card">
+<h2>📱 Responsive</h2>
+<p>Works perfectly on desktop, tablet, and mobile.</p>
+</div>
+
+</section>
+
+<footer>
+
+<h3>© 2026 Beautiful Webpage | Designed with HTML & CSS</h3>
+
+</footer>
+
+</body>
+</html>
